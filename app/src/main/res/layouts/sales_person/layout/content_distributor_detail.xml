@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_distributor_detail">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_firmNameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Firm name"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_firmName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_firmNameTitle" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_nameTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_firmName" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_nameTitle" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_gstNumTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="GST Number"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_name" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_gstNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_gstNumTitle" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_addressTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Address"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_gstNumber" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_addressTitle" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_emailTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Email"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_address" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_emailTitle" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_mobileNumTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Mobile Number"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_email" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_mobileNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_mobileNumTitle" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_myOrders"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:text="My Orders"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/activity_distributor_detail_imageView"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_mobileNumber" />
+
+        <ImageView
+            android:id="@+id/activity_distributor_detail_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/activity_distributor_detail_textView_myOrders"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_distributor_detail_textView_myOrders"
+            app:layout_constraintTop_toTopOf="@id/activity_distributor_detail_textView_myOrders"
+            app:srcCompat="@drawable/ic_arrow_right" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/activity_distributor_detail_textView_paymentHistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Payment History"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/activity_distributor_detail_imageView"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_myOrders" />
+
+        <!--<ImageView
+            android:id="@+id/activity_distributor_detail_imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            app:layout_constraintBottom_toBottomOf="@id/activity_distributor_detail_textView_myOrders"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/activity_distributor_detail_textView_myOrders"
+            app:layout_constraintTop_toTopOf="@id/activity_distributor_detail_textView_myOrders"
+            app:srcCompat="@drawable/ic_arrow_right" />-->
+
+        <com.app.graffiti.custom_views.CustomButton
+            android:id="@+id/activity_distributor_detail_button_placeOrder"
+            android:layout_width="0dp"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Place New Order"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/activity_distributor_detail_textView_paymentHistory" />
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

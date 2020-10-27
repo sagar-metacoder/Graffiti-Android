@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dashboard_appBar_bgContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sales_appbar_bg"
+    tools:showIn="@layout/activity_dashboard">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/activity_dashboard_guide_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".3" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/activity_dashboard_guide_horizontal"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!--<include
+        android:id="@+id/activity_dashboard_salesUserDetailContainer"
+        layout="@layout/layout_sales_details"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_dashboard_guide_horizontal" />
+
+    <include
+        android:id="@+id/activity_dashboard_distributorDetailContainer"
+        layout="@layout/layout_distributor_details"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_dashboard_guide_horizontal" />
+
+    <include
+        android:id="@+id/activity_dashboard_dealerDetailContainer"
+        layout="@layout/layout_dealer_details"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_dashboard_guide_horizontal" />-->
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/activity_dashboard_guide_horizontal" />
+
+    <ImageView
+        android:id="@+id/activity_dashboard_imageView_arrowLeft"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_dashboard_guide_horizontal"
+        app:srcCompat="@drawable/ic_arrow_left" />
+
+    <ImageView
+        android:id="@+id/activity_dashboard_imageView_arrowRight"
+        android:layout_width="30dp"
+        android:layout_height="0dp"
+        android:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_dashboard_guide_horizontal"
+        app:srcCompat="@drawable/ic_arrow_right" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_dashboard_viewPager_userInfo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/activity_dashboard_imageView_arrowRight"
+        app:layout_constraintStart_toEndOf="@id/activity_dashboard_imageView_arrowLeft"
+        app:layout_constraintTop_toBottomOf="@id/activity_dashboard_guide_horizontal" />
+</android.support.constraint.ConstraintLayout>

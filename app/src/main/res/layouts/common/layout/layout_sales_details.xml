@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".33" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".66" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_salesTargetTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="My Target"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/activity_dashboard_textView_distTarget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_distTarget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:text="15/20"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/activity_dashboard_textView_distTitle"
+        app:layout_constraintEnd_toStartOf="@id/guideOne"
+        app:layout_constraintStart_toStartOf="@id/activity_dashboard_textView_distTitle"
+        app:layout_constraintTop_toBottomOf="@id/activity_dashboard_textView_salesTargetTitle" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_distTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="JOIN DISTRIBUTOR"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_dashboard_textView_distTarget" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_dealerTarget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:text="15/20"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/activity_dashboard_textView_distTarget"
+        app:layout_constraintEnd_toStartOf="@id/guideTwo"
+        app:layout_constraintStart_toStartOf="@id/guideOne" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_dealerTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:text="JOIN DEALER"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/activity_dashboard_textView_distTitle"
+        app:layout_constraintEnd_toStartOf="@id/guideTwo"
+        app:layout_constraintStart_toStartOf="@id/guideOne" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_salesTarget"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="73/200"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/activity_dashboard_textView_distTarget"
+        app:layout_constraintEnd_toEndOf="@id/activity_dashboard_textView_salesTitle"
+        app:layout_constraintStart_toStartOf="@id/guideTwo" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_salesTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginStart="5dp"
+        android:text="SALES PRODUCT"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/activity_dashboard_textView_distTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideTwo" />
+</android.support.constraint.ConstraintLayout>

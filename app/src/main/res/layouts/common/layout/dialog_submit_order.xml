@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="10dp">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/dialog_submit_order_guidelineOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/dialog_submit_order_textView_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Your order summary : "
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/dialog_submit_order_textView_productDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_submit_order_textView_title" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/dialog_submit_order_textView_amountTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Amount : "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/dialog_submit_order_guidelineOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_submit_order_textView_productDesc" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/dialog_submit_order_textView_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/dialog_submit_order_textView_amountTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dialog_submit_order_guidelineOne" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/dialog_submit_order_textInput_discount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:hint="% Discount (Optional)"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_submit_order_textView_amount">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/dialog_submit_order_editText_discount"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:maxLength="10"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/dialog_submit_order_textInput_tax"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:hint="Tax (Optional)"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/dialog_submit_order_textInput_discount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dialog_submit_order_guidelineOne"
+        app:layout_constraintTop_toTopOf="@id/dialog_submit_order_textInput_discount">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/dialog_submit_order_editText_tax"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="numberDecimal"
+            android:maxLength="3"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/dialog_submit_order_textView_totalTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:text="Total : "
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/dialog_submit_order_guidelineOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_submit_order_textInput_discount" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/dialog_submit_order_textView_total"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/dialog_submit_order_textView_totalTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/dialog_submit_order_guidelineOne" />
+
+    <com.app.graffiti.custom_views.CustomButton
+        android:id="@+id/dialog_submit_order_button"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dialog_submit_order_textView_total" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_send_daily_expense">
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_send_daily_expense_textView_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/activity_send_daily_expense_swipeRefreshView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/activity_send_daily_expense_swipeRefreshView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@id/activity_send_daily_expense_textInput_otherComment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_send_daily_expense_textView_date">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/activity_send_daily_expense_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <!--<android.support.design.widget.TextInputLayout
+        android:id="@+id/activity_send_daily_expense_textInput_expense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Expense"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/activity_send_daily_expense_textInput_otherComment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_send_daily_expense_swipeRefreshView">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/activity_send_daily_expense_editText_expense"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.design.widget.TextInputLayout>-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/activity_send_daily_expense_textInput_otherComment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Other Comment"
+        app:layout_constraintBottom_toTopOf="@id/activity_send_daily_expense_button_expense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_send_daily_expense_swipeRefreshView">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/activity_send_daily_expense_editText_otherComment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <com.app.graffiti.custom_views.CustomButton
+        android:id="@+id/activity_send_daily_expense_button_expense"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorButtonTeal"
+        android:text="Expense"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@id/activity_send_daily_expense_button_newDealer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_send_daily_expense_textInput_otherComment" />
+
+    <com.app.graffiti.custom_views.CustomButton
+        android:id="@+id/activity_send_daily_expense_button_newDealer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Add New"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@id/activity_send_daily_expense_button_sendReport"
+        app:layout_constraintEnd_toStartOf="@id/activity_send_daily_expense_button_addActive"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_send_daily_expense_button_expense" />
+
+    <com.app.graffiti.custom_views.CustomButton
+        android:id="@+id/activity_send_daily_expense_button_addActive"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Active"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@id/activity_send_daily_expense_button_newDealer"
+        app:layout_constraintEnd_toStartOf="@id/activity_send_daily_expense_button_addPending"
+        app:layout_constraintStart_toEndOf="@id/activity_send_daily_expense_button_newDealer"
+        app:layout_constraintTop_toTopOf="@id/activity_send_daily_expense_button_newDealer" />
+
+    <com.app.graffiti.custom_views.CustomButton
+        android:id="@+id/activity_send_daily_expense_button_addPending"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Pending"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="@id/activity_send_daily_expense_button_newDealer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/activity_send_daily_expense_button_addActive"
+        app:layout_constraintTop_toTopOf="@id/activity_send_daily_expense_button_newDealer" />
+
+    <com.app.graffiti.custom_views.CustomButton
+        android:id="@+id/activity_send_daily_expense_button_sendReport"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorButtonTeal"
+        android:text="Send Report"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/activity_send_daily_expense_button_addPending"
+        app:layout_constraintStart_toStartOf="@id/activity_send_daily_expense_button_newDealer"
+        app:layout_constraintTop_toBottomOf="@id/activity_send_daily_expense_button_newDealer" />
+</android.support.constraint.ConstraintLayout>

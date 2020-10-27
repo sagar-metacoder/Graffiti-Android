@@ -1,0 +1,173 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Button themes    -->
+    <style name="ButtonTheme" parent="Base.TextAppearance.AppCompat.Widget.Button">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="ButtonTheme.ActivityRedirectProductCatalogue">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@color/colorButtonGrey</item>
+        <item name="android:text">View Product Catalouge</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="ignoreTextColor">true</item>
+    </style>
+
+    <style name="ButtonTheme.ActivityRedirectLogin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@color/colorButtonIndigo</item>
+        <item name="android:text">Login</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ButtonTheme.ActivityRedirectComplaints">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@color/colorButtonLightGreen</item>
+        <item name="android:text">Complaints</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="ignoreTextColor">true</item>
+    </style>
+
+    <style name="ButtonTheme.ActivityMultiLogInSales">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:background">@drawable/sales_person_bg</item>
+        <item name="android:text">@string/button_login_as_sales</item>
+        <item name="android:gravity">start|bottom</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="ignoreTextGravity">true</item>
+    </style>
+
+    <style name="ButtonTheme.ActivityMultiLogInDistributor">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/distributor_bg</item>
+        <item name="android:text">@string/button_login_as_distributor</item>
+        <item name="android:gravity">start|bottom</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="ignoreTextGravity">true</item>
+    </style>
+
+    <style name="ButtonTheme.ActivityMultiLogInDealer">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:background">@drawable/dealer_bg</item>
+        <item name="android:text">@string/button_login_as_dealer</item>
+        <item name="android:gravity">start|bottom</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="ignoreTextGravity">true</item>
+    </style>
+
+    <style name="ButtonTheme.ActivityMultiLogInPlumber">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">30dp</item>
+        <item name="android:background">@drawable/plumber_bg</item>
+        <item name="android:text">@string/button_login_as_plumber</item>
+        <item name="android:gravity">start|bottom</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="ignoreTextGravity">true</item>
+    </style>
+
+    <style name="ButtonTheme.ActivitySalesLogin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">@color/colorButtonIndigo</item>
+        <item name="android:text">Login</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ButtonTheme.ActivityAddDistributor">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">@color/colorButtonIndigo</item>
+        <item name="android:text">Add</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="ButtonTheme.ActivityUpdateDistributor">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:background">@color/colorButtonIndigo</item>
+        <item name="android:text">Update</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--Image Themes-->
+    <style name="ImageView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ImageView.AppLogo">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@drawable/app_logo</item>
+        <item name="android:contentDescription">App logo (Graffiti)</item>
+    </style>
+
+    <style name="ImageView.AppBg">
+        <item name="android:layout_height">0dp</item>
+        <item name="android:scaleType">centerInside</item>
+        <item name="android:background">@drawable/home_screen</item>
+        <item name="android:contentDescription">App bg (Graffiti)</item>
+    </style>
+</resources>

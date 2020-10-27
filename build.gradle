@@ -1,0 +1,54 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext.kotlin_version = '1.2.41'
+    ext.gradle_version = '3.1.0'
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+ext {
+    compileSdkVersion = 27
+    buildToolsVersion = "27.0.3"
+    applicationId = "com.app.graffiti"
+    minSdkVersion = 14
+    targetSdkVersion = 28
+    versionCode = 13
+    versionName = "1.13"
+
+    jUnitLibVersion = "4.12"
+    testRunnerLibVersion = "1.0.1"
+    espressoCoreVersion = "3.0.1"
+    supportLibVersion = "27.1.1"
+    constraintLayoutVersion = "1.1.1"
+    retrofitLibVersion = "2.3.0"
+    gsonConverterLibVersion = "2.0.2"
+    gsonLibVersion = "2.8.2"
+    okhttp3LibVersion = "3.10.0"
+    playServiceLibVersion = "15.0.1"
+    glideLibVersion = "4.6.1"
+    workManagerVersion = "1.0.0-alpha02"
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

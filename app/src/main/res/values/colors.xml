@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#9E9E9E</color>
+
+    <color name="colorButtonIndigo">#3F51B5</color>
+    <color name="colorButtonGrey">#9E9E9E</color>
+    <color name="colorButtonLightGreen">#8BC34A</color>
+    <color name="colorAccentLight">#509E9E9E</color>
+    <color name="colorButtonTeal">#009688</color>
+    <color name="colorNavigationDrawerBg">#CC9E9E9E</color>
+    <color name="colorNavigationItemBg">#CCFFFFFF</color>
+    <color name="colorItemTargetSchemeBg">#CC9E9E9E</color>
+</resources>

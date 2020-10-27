@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">GRAFDOER</string>
+
+    <string name="toolbar_title_log_in">Log in</string>
+
+    <string name="button_login_as_sales">Log in as\n<b>SALES PERSON</b></string>
+    <string name="button_login_as_distributor">Log in as\n<b>DISTRIBUTOR</b></string>
+    <string name="button_login_as_dealer">Log in as\n<b>DEALER</b></string>
+    <string name="button_login_as_plumber">Log in as\n<b>PLUMBER</b></string>
+    <string name="full_user_name">%1$s %2$s</string>
+    <string name="location_updated">Location Updated: %1$s</string>
+
+    <string name="item_distributor">Distributor</string>
+    <string name="item_dealer">Dealer</string>
+    <string name="item_order">Orders</string>
+    <string name="item_product">View Products</string>
+    <string name="item_daily_report">Daily Sales Report</string>
+    <string name="item_order_report">Order Report</string>
+    <string name="item_dealer_order">Dealer Orders</string>
+    <string name="item_dealer_report">Dealer Report</string>
+    <string name="item_payment_history">Payment History</string>
+    <string name="item_target_scheme">Target Scheme</string>
+    <string name="my_team">My Team</string>
+
+    <string name="item_create_my_order">Create My Order</string>
+    <string name="item_my_order">My Orders</string>
+    <string name="item_latest_updates">Latest updates</string>
+    <string name="item_user_ledger">My Ledger</string>
+    <string name="item_products">Products</string>
+    <string name="item_brochure">Brochure</string>
+    <string name="item_login">Login</string>
+    <string name="item_complaints">Complaints</string>
+
+    <string name="item_from_address"><b>From : </b>%1$s</string>
+    <string name="item_to_address"><b>To : </b>%1$s</string>
+    <string name="item_mode_of_journey"><b>Mode of journey : </b>%1$s</string>
+    <string name="item_fare"><b>Fare : </b>%1$s</string>
+    <string name="item_total"><b>Total : </b>%1$s</string>
+
+    <string name="title_pager_active">Active</string>
+    <string name="title_pager_pending">Pending</string>
+    <string name="title_pager_completed">Completed</string>
+    <string name="title_pager_history">History</string>
+    <string name="dialog_title_add_user">Add user info :</string>
+    <string name="dialog_title_update_user">Update user info :</string>
+
+    <string name="currencyWithPrice">\u20b9%1$s</string>
+    <string name="priceWithCurrency">%1$s\u20b9</string>
+    <string name="currency_price">\u20b9 %1$s</string>
+    <string name="price_currency">%1$s \u20b9</string>
+
+    <string name="text_mrp">Mrp : %1$s</string>
+    <string name="text_total">Total : %1$s</string>
+
+    <string name="button_text_pick_start_date">Pick Starting Date</string>
+    <string name="button_text_pick_end_date">Pick Ending Date</string>
+    <string name="button_text_picked_start_date">Start Date : %1$s</string>
+    <string name="button_text_picked_end_date">End Date : %1$s</string>
+    <string name="button_text_add_expense">Add expense</string>
+    <string name="button_text_save_expense">Save expense</string>
+    <string name="button_text_update_expense">Update expense</string>
+
+    <string name="item_order_product_name">Product Name : %1$s</string>
+    <string name="item_order_product_code">Product Code : %1$s</string>
+    <string name="item_order_total_quantity">Total quantity : %1$s</string>
+    <string name="item_order_dispatched_quantity">Dispatched quantity : %1$s</string>
+    <string name="item_order_pending_quantity">Pending quantity : %1$s</string>
+
+    <string name="item_payment_history_amount">Amount : %1$s</string>
+    <string name="item_payment_history_date">Date : %1$s</string>
+    <string name="item_payment_history_description">Detail : %1$s</string>
+
+    <string name="dialog_product_description">You have total %1$d product/s added</string>
+
+    <string name="lorem_ipsum">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </string>
+
+    <!--<string name="place_api_key">AIzaSyDunW-uAdfdPal04IqtTLZ1VNh5fo10yW8</string>-->
+    <string name="place_api_key">AIzaSyDfh73iDHclRAlxgz4wecRuxp9v-3AxPO8</string>
+    <string name="geo_code_api_key">AIzaSyAzYoKzL6UNxFse5VHsakHItBZ1qoQR_Tc</string>
+    <string name="from_gallery">From Gallery</string>
+    <string name="from_camera">From Camera</string>
+</resources>

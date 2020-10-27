@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Graffiti-Android.iml" filepath="$PROJECT_DIR$/.idea/modules/Graffiti-Android.iml" group="Graffiti-Android" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Graffiti-Android/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/easynetworkcall-redefined/easynetworkcall-redefined.iml" filepath="$PROJECT_DIR$/.idea/modules/easynetworkcall-redefined/easynetworkcall-redefined.iml" group="Graffiti-Android/easynetworkcall-redefined" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mvvmcore/mvvmcore.iml" filepath="$PROJECT_DIR$/.idea/modules/mvvmcore/mvvmcore.iml" group="Graffiti-Android/mvvmcore" />
+    </modules>
+  </component>
+</project>

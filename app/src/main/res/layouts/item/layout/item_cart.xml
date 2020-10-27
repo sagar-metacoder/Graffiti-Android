@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/item_cart_guideline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".35" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/item_cart_guideline2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".90" />
+
+        <ImageView
+            android:id="@+id/item_cart_imageView_product"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_cart_guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/item_cart_textView_productCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintEnd_toEndOf="@id/item_cart_guideline2"
+            app:layout_constraintStart_toStartOf="@id/item_cart_guideline"
+            app:layout_constraintTop_toTopOf="@id/item_cart_imageView_product" />
+
+        <ImageView
+            android:id="@+id/item_cart_imageView_quantityMinus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/item_cart_editText_productQuantity"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@id/item_cart_guideline"
+            app:layout_constraintTop_toBottomOf="@+id/item_cart_imageView_removeProduct"
+            app:srcCompat="@drawable/ic_minus" />
+
+        <!--<EditText
+            android:id="@+id/item_cart_editText_productQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:hint="quantity"
+            android:inputType="numberSigned"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_cart_imageView_quantityMinus"
+            app:layout_constraintEnd_toStartOf="@id/item_cart_imageView_quantityAdd"
+            app:layout_constraintStart_toEndOf="@id/item_cart_imageView_quantityMinus"
+            app:layout_constraintTop_toTopOf="@id/item_cart_imageView_quantityMinus" />-->
+
+        <EditText
+            android:id="@+id/item_cart_editText_productQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:hint="quantity"
+            android:inputType="numberSigned"
+            android:maxLength="4"
+            android:maxLines="1"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@id/item_cart_textView_productCode"
+            app:layout_constraintStart_toStartOf="@id/item_cart_textView_productCode"
+            app:layout_constraintTop_toBottomOf="@id/item_cart_imageView_removeProduct" />
+
+        <ImageView
+            android:id="@+id/item_cart_imageView_quantityAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/item_cart_imageView_quantityMinus"
+            app:layout_constraintEnd_toStartOf="@id/item_cart_guideline2"
+            app:layout_constraintStart_toEndOf="@id/item_cart_editText_productQuantity"
+            app:layout_constraintTop_toTopOf="@id/item_cart_imageView_quantityMinus"
+            app:srcCompat="@drawable/ic_add" />
+
+        <ImageView
+            android:id="@+id/item_cart_imageView_removeProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/holo_red_dark"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/item_cart_guideline2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_delete" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

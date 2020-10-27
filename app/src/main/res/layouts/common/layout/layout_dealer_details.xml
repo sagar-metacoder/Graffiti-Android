@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_dealerTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Ledger"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/activity_dashboard_textView_distTarget"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_dealerOpeningBal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:text="100000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/activity_dashboard_textView_dealerOpeningBalTitle"
+        app:layout_constraintEnd_toStartOf="@id/guideOne"
+        app:layout_constraintStart_toStartOf="@id/activity_dashboard_textView_dealerOpeningBalTitle"
+        app:layout_constraintTop_toBottomOf="@id/activity_dashboard_textView_dealerTitle" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_dealerOpeningBalTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="OPENING BALANCE"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideOne"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_dashboard_textView_dealerOpeningBal" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_dealerClosingBal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:text="300000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@id/activity_dashboard_textView_dealerOpeningBal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideOne" />
+
+    <com.app.graffiti.custom_views.CustomTextView
+        android:id="@+id/activity_dashboard_textView_dealerClosingBalTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="5dp"
+        android:text="CLOSING BALANCE"
+        android:textSize="12sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/activity_dashboard_textView_dealerOpeningBalTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideOne" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@id/activity_dashboard_textView_dealerOpeningBalTitle"
+        app:layout_constraintEnd_toEndOf="@id/guideOne"
+        app:layout_constraintStart_toStartOf="@id/guideOne"
+        app:layout_constraintTop_toTopOf="@id/activity_dashboard_textView_dealerOpeningBal" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <!--    TODO : [ 15/6/18/Jeel Vankhede ] : item_order      Remove once done -->
+        <!--<android.support.constraint.Guideline
+            android:id="@+id/item_order_guideline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".35" />
+
+        <ImageView
+            android:id="@+id/item_order_imageView_product"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/item_order_guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/item_order_textView_productName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/item_order_guideline"
+            app:layout_constraintTop_toTopOf="@id/item_order_imageView_product" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/item_order_textView_productCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/item_order_textView_productName"
+            app:layout_constraintStart_toStartOf="@id/item_order_textView_productName"
+            app:layout_constraintTop_toBottomOf="@id/item_order_textView_productName" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/item_order_textView_productQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/item_order_textView_productName"
+            app:layout_constraintStart_toStartOf="@id/item_order_textView_productName"
+            app:layout_constraintTop_toBottomOf="@id/item_order_textView_productCode" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/item_order_textView_dispatchedQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/item_order_textView_productName"
+            app:layout_constraintStart_toStartOf="@id/item_order_textView_productName"
+            app:layout_constraintTop_toBottomOf="@id/item_order_textView_productQuantity" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/item_order_textView_pendingQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@id/item_order_textView_productName"
+            app:layout_constraintStart_toStartOf="@id/item_order_textView_productName"
+            app:layout_constraintTop_toBottomOf="@id/item_order_textView_dispatchedQuantity" />-->
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/item_order_textView_productName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/item_order_textView_productCode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@id/item_order_textView_productName"
+            app:layout_constraintStart_toStartOf="@id/item_order_textView_productName"
+            app:layout_constraintTop_toBottomOf="@id/item_order_textView_productName" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/item_order_textView_productQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/item_order_textView_productName"
+            app:layout_constraintStart_toStartOf="@id/item_order_textView_productName"
+            app:layout_constraintTop_toBottomOf="@id/item_order_textView_productCode" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/item_order_textView_dispatchedQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@id/item_order_textView_pendingQuantity"
+            app:layout_constraintStart_toStartOf="@id/item_order_textView_productName"
+            app:layout_constraintTop_toBottomOf="@id/item_order_textView_productQuantity" />
+
+        <com.app.graffiti.custom_views.CustomTextView
+            android:id="@+id/item_order_textView_pendingQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/item_order_textView_dispatchedQuantity"
+            app:layout_constraintEnd_toEndOf="@id/item_order_textView_productName"
+            app:layout_constraintStart_toEndOf="@id/item_order_textView_dispatchedQuantity"
+            app:layout_constraintTop_toTopOf="@id/item_order_textView_dispatchedQuantity" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>

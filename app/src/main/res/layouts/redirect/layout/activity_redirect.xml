@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".redirect.RedirectActivity">
+
+    <include
+        android:id="@+id/activity_redirect_toolbar"
+        layout="@layout/app_toolbar"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/activity_redirect_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#1F4075"
+        app:layout_constraintTop_toBottomOf="@id/activity_redirect_toolbar"
+        android:layout_width="0dp"
+        android:layout_height="0dp">
+
+        <ImageView
+            android:id="@+id/imageGrafityTop"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/grafity_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_below="@id/imageGrafityTop"
+            android:layout_above="@id/imageGrafityBottom"
+            android:weightSum="3"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:id="@+id/imageLogin"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/login_main"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imageProducts"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/product_main"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:id="@+id/imageCatalogue"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/catelog_main"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imageComplaints"
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/complaints_main"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:weightSum="2"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+                <ImageView
+                    android:id="@+id/imageUpdate"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/updates_main"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/complaints_main"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:visibility="invisible"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageGrafityBottom"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/grafity_bottom"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/activity_redirect_imageView"
+        style="@style/ImageView.AppBg"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_redirect_toolbar"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <!--<android.support.v4.view.ViewPager
+        android:id="@+id/activity_redirect_viewPager_productList"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toTopOf="@id/activity_redirect_button_productCatalogue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_redirect_imageView" />
+
+    <com.app.graffiti.custom_views.CustomButton
+        android:id="@+id/activity_redirect_button_productCatalogue"
+        style="@style/ButtonTheme.ActivityRedirectProductCatalogue"
+        app:layout_constraintBottom_toTopOf="@id/activity_redirect_button_logIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_redirect_viewPager_productList" />
+
+    <com.app.graffiti.custom_views.CustomButton
+        android:id="@+id/activity_redirect_button_logIn"
+        style="@style/ButtonTheme.ActivityRedirectLogin"
+        app:layout_constraintBottom_toTopOf="@id/activity_redirect_button_complaints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_redirect_button_productCatalogue" />
+
+    <com.app.graffiti.custom_views.CustomButton
+        android:id="@+id/activity_redirect_button_complaints"
+        style="@style/ButtonTheme.ActivityRedirectComplaints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/activity_redirect_button_logIn" />-->
+</android.support.constraint.ConstraintLayout>
